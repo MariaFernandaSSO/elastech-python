@@ -1,0 +1,17 @@
+numero1 = float(input("Digite o primeiro número: "))
+numero2 = float(input("Digite o segundo número: "))
+operacao = input("Digite a operação (+, -, *, /): ")
+
+if operacao == "+":
+    print("Resultado:", numero1 + numero2)
+elif operacao == "-":
+    print("Resultado:", numero1 - numero2)
+elif operacao == "*":
+    print("Resultado:", numero1 * numero2)
+elif operacao == "/":
+    if numero2 != 0:
+        print("Resultado:", numero1 / numero2)
+    else:
+        print("Erro: não é possível dividir por zero")
+else:
+    print("Operação inválida")
